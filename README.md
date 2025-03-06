@@ -1,3 +1,10 @@
+# 🌐 Internet Programming Assignment 2  
+
+Welcome to the **Internet Programming Assignment 2** project! 🚀  
+
+## 🌟 Live Demo  
+Check out the live version of the website here:  
+👉 [Internet Programming Assignment 2](https://prey801.github.io/internet-programming-assignment2/index.html)  
 # Pure Haven Website
 
 This repository contains the code for the Pure Haven website, a fictional online perfume store. The website is built using HTML, CSS, and JavaScript, with GSAP for animations.
