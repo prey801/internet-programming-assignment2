@@ -1,0 +1,151 @@
+/* product-style.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #181818; /* Black background */
+    color: white; /* White text color */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black; /* Black header background */
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* White box shadow */
+}
+
+.header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #555; /* Dark gray hover background */
+}
+
+.nav-links a.active {
+    background-color: #333; /* Darker gray active background */
+    color: white;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #f1f1f1;
+        width: 150px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links a {
+        padding: 10px;
+        display: block;
+        color: black;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+.background-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Allow images to wrap */
+}
+
+.background-animation img {
+    width: 200px; /* Adjust image size as needed */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); /* White box shadow */
+    margin-bottom: 20px; /* Add space between images */
+}
+
+.product-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.product-card {
+    width: 280px;
+    background: #282828; /* Dark gray background for product cards */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); /* White box shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7); /* White box shadow on hover */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.view-details {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: white; /* White background for button */
+    color: black; /* Black text color for button */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+    background-color: #ddd; /* Lighter gray background on hover */
+}
