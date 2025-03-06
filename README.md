@@ -43,3 +43,5 @@ This repository contains the code for the Pure Haven website, a fictional online
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
 ## License
+![image](https://github.com/user-attachments/assets/c8495da0-bc2c-4b89-9b88-df87f1a58156)
+
